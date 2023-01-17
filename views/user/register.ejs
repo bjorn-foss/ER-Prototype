@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head.ejs') %>
+<body class="d-flex text-center text-bg-dark">
+<%- include('../partials/header.ejs') %>
+<div class="b-example-divider"></div>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="py-5 my-5">
+        <div class="col-md-10 mx-auto col-lg-8">
+            <form class="p-4 p-md-5 border rounded-3 bg-light" method="POST" action="/register">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="username"
+                           placeholder="Nome de utilizador">
+                    <label for="floatingInput">Nome de utilizador</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" name="password"
+                           placeholder="Palavra-passe">
+                    <label for="floatingPassword">Palavra-passe</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingConfirmPassword" name="confirm_password"
+                           placeholder="Confirmar Palavra-passe">
+                    <label for="floatingPassword">Confirmar Palavra-passe</label>
+                </div>
+                <button type="submit" class="w-100 btn btn-lg btn-secondary" onclick="window.location.href='/login'">
+                    Registar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="b-example-divider"></div>
+<%- include('../partials/footer.ejs') %>
+</body>
+</html>
