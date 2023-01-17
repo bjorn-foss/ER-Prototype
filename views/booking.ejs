@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head.ejs') %>
+<style>
+</style>
+<body class="d-flex text-center text-bg-dark">
+<%- include('./partials/header.ejs') %>
+<div class="b-example-divider"></div>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="py-5 my-5">
+        <table class="table table-striped table-bordered table-hover mb-5">
+            <thead>
+            <tr>
+                <th class="table-dark" scope="col" colspan="7">Lista de Reservas</th>
+            </tr>
+            <tr class="table-info">
+                <th scope="col">ID</th>
+                <th scope="col">Origem</th>
+                <th scope="col">Destino</th>
+                <th scope="col">Transporte</th>
+                <th scope="col">Dia</th>
+                <th scope="col">Hora</th>
+                <th scope="col">Classificação</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Origem1</td>
+                <td>Destino1</td>
+                <td>Transporte1</td>
+                <td>Dia1</td>
+                <td>Hora1</td>
+                <td>Classificação1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Origem2</td>
+                <td>Destino2</td>
+                <td>Transporte2</td>
+                <td>Dia2</td>
+                <td>Hora2</td>
+                <td>Classificação2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Origem3</td>
+                <td>Destino3</td>
+                <td>Transporte3</td>
+                <td>Dia3</td>
+                <td>Hora3</td>
+                <td>Classificação3</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="col-md-10 mx-auto col-lg-5">
+            <button type="submit" class="w-100 btn btn-lg btn-secondary" onclick="window.location.href='/newbooking'">
+                Criar Reserva
+            </button>
+        </div>
+    </div>
+</div>
+<div class="b-example-divider"></div>
+<%- include('./partials/footer.ejs') %>
+</body>
+</html>

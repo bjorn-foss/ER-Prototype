@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head.ejs') %>
+<style>
+</style>
+<body class="d-flex text-center text-bg-dark">
+<%- include('./partials/header.ejs') %>
+<div class="b-example-divider"></div>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="py-5 my-5">
+        <div class="col-md-10 mx-auto col-lg-8">
+            <form class="p-4 p-md-5 border rounded-3 bg-light" method="POST" action="/newbooking">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="fromInput" name="from"
+                           placeholder="Origem">
+                    <label for="fromInput">Origem</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="toInput" name="to"
+                           placeholder="Destino">
+                    <label for="toInput">Destino</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="transportInput" name="transport"
+                           placeholder="Tipo de transporte">
+                    <label for="transportInput">Tipo de transporte</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="dayInput" name="day"
+                           placeholder="Dia">
+                    <label for="dayInput">Dia</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="hourInput" name="hour"
+                           placeholder="Hora">
+                    <label for="hourInput">Hora</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="paymentInput" name="payment"
+                           placeholder="Pagamento">
+                    <label for="paymentInput">Pagamento</label>
+                </div>
+                <button type="submit" class="w-100 btn btn-lg btn-secondary" onclick="window.location.href='/booking'">
+                    Criar Reserva
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="b-example-divider"></div>
+<%- include('./partials/footer.ejs') %>
+</body>
+</html>
