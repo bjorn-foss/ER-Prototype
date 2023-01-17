@@ -1,0 +1,60 @@
+.flex-container {
+    display: flex; /* or inline-flex */
+    background: none;
+    /* height: 300px; /* Or whatever */
+    flex-flow: row wrap;
+    justify-content: space-evenly; /* main axis */
+    align-items: stretch; /* cross axis */
+    align-content: space-around; /* flex-wrap must be wrap in order to take effect */
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+}
+
+.flex-item {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+    background: white;
+    padding: 5px;
+    width: 350px;  /* Or whatever */
+    height: 350px; /* Or whatever */
+    margin: 20px;  /* Magic! */
+    color: black;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    line-height: 325px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.flex-container::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    /* The background image */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(/assets/images/background-modified.jpg);
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Full width */
+    width: 100%;
+    /* Full height */
+    height: 100%;
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 500px;
+
+    /* Add the blur effect */
+    filter: blur(3px);
+}
